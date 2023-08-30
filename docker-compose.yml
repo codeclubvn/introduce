@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  api:
+    image: ghcr.io/codeclubvn/introduce
+    container_name: introduce
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - ${PORT}:${PORT}
